@@ -1,0 +1,289 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no">
+		<title>Portal</title>
+		<link rel="stylesheet" href="./css/style.css">
+		<script src="./js/script.js"></script>
+	</head>
+	<body>
+		<div class="topo">
+			<div class="topoint">
+				<div class="topoleft">
+					<ul>
+						<li><a href="./" class="ativo">Home</a></li>
+						<li><a href="quem-somos">Quem Somos</a></li>
+						<li><a href="anuncie-aqui">Anuncie Aqui</a></li>
+						<li><a href="contato">Contato</a></li>
+					</ul>
+				</div>
+				<div class="toporight">
+					<input type="image" src="./images/lupa.png" border="0" width="26" height="26" />
+					<input type="text" name="busca" class="topobusca" placeholder="Busca..." />					
+					<a href=""><img src="./images/rss.png" border="0" width="26" height="26" /></a>
+					<a href=""><img src="./images/twitter.png" border="0" width="26" height="26" /></a>
+					<a href=""><img src="./images/youtube.png" border="0" width="26" height="26" /></a>
+					<a href=""><img src="./images/googleplus.png" border="0" width="26" height="26" /></a>
+					<a href=""><img src="./images/facebook.png" border="0" width="26" height="26" /></a>					
+				</div>
+			</div>
+		</div>
+		<div class="topo2">
+			<div class="topo2int">
+				<div class="logo">
+					<img src="./images/logo.png" border="0" width="230" />
+				</div>
+				<div class="banner">
+					<img src="./images/anuncio2.png" alt="" border="0" height="80px" width="680px">
+				</div>
+			</div>
+		</div>
+		<div class="menu">
+			<div class="menuint">
+				<img src="./images/menu.png" border="0" width="40" height="40" class="menumobile" onclick="toggleMenu()" />
+				<ul id="menu">
+					<li><a href="./" class="ativo">Home</a></li>
+					<li><a href="./">Economia</a></li>
+					<li>
+						<a href="./">Entretenimento</a>
+						<img src="./images/arrowdown.png" border="0" width="10" />
+						<div class="submenu">
+							<a href="./"><div class="submenuitem">Sub menu 1</div></a>
+							<a href="./"><div class="submenuitem">Sub menu 2</div></a>
+							<a href="./"><div class="submenuitem">Sub menu 3</div></a>
+							<a href="./"><div class="submenuitem">Sub menu 4</div></a>
+							<a href="./"><div class="submenuitem">Sub menu 5</div></a>
+						</div>
+					</li>
+					<li>
+						<a href="./">Esportes</a>
+						<img src="./images/arrowdown.png" border="0" width="10" />
+						<div class="submenu">
+							<a href="./"><div class="submenuitem">Sub menu 1</div></a>
+							<a href="./"><div class="submenuitem">Sub menu 2</div></a>
+							<a href="./"><div class="submenuitem">Sub menu 3</div></a>
+						</div>
+					</li>
+					<li><a href="./">Geral</a></li>
+					<li>
+						<a href="./">Notícias</a>
+						<img src="./images/arrowdown.png" border="0" width="10" />
+						<div class="submenu">
+							<a href="./"><div class="submenuitem">Sub menu 1</div></a>
+							<a href="./"><div class="submenuitem">Sub menu 2</div></a>
+							<a href="./"><div class="submenuitem">Sub menu 3</div></a>
+							<a href="./"><div class="submenuitem">Sub menu 4</div></a>
+						</div>
+					</li>
+					<li><a href="./">Polícia</a></li>
+					<li><a href="./">Videos</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="ultimasnoticias">
+			<div class="ultimasnoticiasint">
+				<div class="ultnoticiasarea">
+					<div class="ultnoticiastitulo">ÚLTIMAS NOTÍCIAS</div>
+					<div class="ultnoticiasnoticia"> <strong>COVID-19:</strong> ESTADOS QUE ENTRARAM EM LOCKDOWN APRESENTAM QUEDAS NO NÚMERO DE CASOS.</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="containerint">
+				<div class="leftside">
+					<div class="slideshow" id="slideshow">
+						<div class="slidebolinhas">
+							<div class="bolinha" onclick="mudarSlide(0)"></div>
+							<div class="bolinha" onclick="mudarSlide(1)"></div>
+							<div class="bolinha" onclick="mudarSlide(2)"></div>
+							<div class="bolinha" onclick="mudarSlide(3)"></div>
+						</div>
+						<div class="slideshowarea">
+							<a href="http://www.google.com.br/">
+								<div class="slide" style="background-image:url('./images/iphone.jpg')">
+									<div class="slideinfo">
+										<div class="slideinfo_titulo"></div>
+										<div class="slideinfo_subtitulo"></div>
+									</div>
+								</div>
+							</a>
+							<div class="slide" style="background-image:url(./images/notici1.jpeg)">
+								<div class="slideinfo">
+									<div class="slideinfo_titulo"><strong>Idosa é resgatada após passar 5 dias em floresta</strong></div>
+									<div class="slideinfo_subtitulo">Resgate foi feito pelo corpo de bombeiros</div>
+								</div>
+							</div>
+							<div class="slide" style="background-image:url('./images/noticia2.jpg')">
+								<div class="slideinfo">
+									<div class="slideinfo_titulo"><strong>Vacinação</strong></div>
+									<div class="slideinfo_subtitulo">Confira se você já pode se vacinar</div>
+								</div>
+							</div>
+							<div class="slide" style="background-image:url('./images/noticia5.jpg')">
+								<div class="slideinfo">
+									<div class="slideinfo_titulo"><strong> Liga da Justiça de Zack Snyder</strong> </div>
+									<div class="slideinfo_subtitulo">Filme tem duração de 4horas.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="widget">
+						<div class="widget_titulo">NOTÍCIAS</div>
+						<div class="widget_conteudo">
+							<div class="noticiaarea1">
+								<div class="noticiaitem noticiabig">
+									<div class="noticiaimg">
+										<img src="./images/trabalho.jpg" border="0" width="80" height="80" />
+									</div>
+									<div class="noticiatitulo"> Dicas para o ingresso no mercado de trabalho </div>
+									<div class="noticiainfo">500 comentários</div>
+								</div>
+							</div>
+							<div class="noticiaarea2">
+								<a href="http://www.google.com.br/">
+									<div class="noticiaitem">
+										<div class="noticiaimg">
+											<img src="./images/noticia3.jpeg" border="0" width="80" height="80" />
+										</div>
+										<div class="noticiatitulo">Enfermeira sobe em cerca para vacinar idoso.</div>
+										<div class="noticiainfo">500 comentários</div>
+									</div>
+								</a>
+								<div class="noticiaitem">
+									<div class="noticiaimg">
+										<img src="./images/iphone.jpg" border="0" width="80" height="80" />
+									</div>
+									<div class="noticiatitulo">Conheça as caracteristicas do novo iphone</div>
+									<div class="noticiainfo">500 comentários</div>
+								</div>
+								<div class="noticiaitem">
+									<div class="noticiaimg">
+										<img src="./images/3c43cc392cd6f1e45079839f9305ffe6.jpg" border="0" width="80" height="80" />
+									</div>
+									<div class="noticiatitulo">Universidade Federal do Ceará</div>
+									<div class="noticiainfo">500 comentários</div>
+								</div>
+								<div class="noticiaitem">
+									<div class="noticiaimg">
+										<img src="./images/noticia4.jpg" border="0" width="80" height="80" />
+									</div>
+									<div class="noticiatitulo">Politíca</div>
+									<div class="noticiainfo">500 comentários</div>
+								</div>
+							</div>
+							<div style="clear:both"></div>
+						</div>
+					</div>
+
+					<div class="widget">
+						<div class="widget_titulo">NOTÍCIAS</div>
+						<div class="widget_conteudo">
+							<div class="noticiaarea1">
+								<div class="noticiaitem noticiabig">
+									<div class="noticiaimg">
+										<img src="./images/felicidade.jpg" border="0" width="80" height="80" />
+									</div>
+									<div class="noticiatitulo">Psicólogos explicam a busca pela felicidade. </div>
+									<div class="noticiainfo">500 comentários</div>
+								</div>
+							</div>
+							<div class="noticiaarea2">
+								<div class="noticiaitem">
+									<div class="noticiaimg">
+										<img src="./images/download.jpg" border="0" width="80" height="80" />
+									</div>
+									<div class="noticiatitulo">Saúde e bem estar. </div>
+									<div class="noticiainfo">500 comentários</div>
+								</div>
+								<div class="noticiaitem">
+									<div class="noticiaimg">
+										<img src="./images/Restaurantes-a-beira-mar-em-Fortaleza-SAIPOS-Sistema-para-Restaurantes.jpg" border="0" width="80" height="80" />
+									</div>
+									<div class="noticiatitulo">Restaurantes na Beira-Mar.</div>
+									<div class="noticiainfo">500 comentários</div>
+								</div>
+								<div class="noticiaitem">
+									<div class="noticiaimg">
+										<img src="./images/maskarad.jpg" border="0" width="80" height="80" />
+									</div>
+									<div class="noticiatitulo">Dica de leitura</div>
+									<div class="noticiainfo">500 comentários</div>
+								</div>
+								<div class="noticiaitem">
+									<div class="noticiaimg">
+										<img src="./images/Praia1.jpg" border="0" width="80" height="80" />
+									</div>
+									<div class="noticiatitulo">Dica das melhores praias do Nordeste</div>
+									<div class="noticiainfo">500 comentários</div>
+								</div>
+							</div>
+							<div style="clear:both"></div>
+						</div>
+					</div>
+
+				</div>
+				<div class="rightside">
+					<div class="widget">
+						<div class="widget_titulo">SOCIAL</div>
+						<div class="widget_conteudo">
+							<a href=""><img src="./images/youtube.png" border="0" width="26" height="26" /></a>
+							<a href=""><img src="./images/twitter.png" border="0" width="26" height="26" /></a>
+							<a href=""><img src="./images/facebook.png" border="0" width="26" height="26" /></a>
+							<a href=""><img src="./images/googleplus.png" border="0" width="26" height="26" /></a>
+							<a href=""><img src="./images/rss.png" border="0" width="26" height="26" /></a>
+						</div>
+					</div>
+					<div class="widget">
+						<div class="widget_titulo">ÚLTIMAS NOTÍCIAS</div>
+						<div class="widget_conteudo">
+							<div class="noticia_item">
+								<a href="./">Titulo da notícia para que fique com pelo menos duas linhas e eu possa exemplificar direito.</a>
+							</div>
+							<div class="noticia_item">
+								<a href="./">Titulo da notícia para que fique com pelo menos duas linhas e eu possa exemplificar direito.</a>
+							</div>
+							<div class="noticia_item">
+								<a href="./">Titulo da notícia para que fique com pelo menos duas linhas e eu possa exemplificar direito.</a>
+							</div>
+							<div class="noticia_item">
+								<a href="./">Titulo da notícia para que fique com pelo menos duas linhas e eu possa exemplificar direito.</a>
+							</div>
+							<div class="noticia_item">
+								<a href="./">Titulo da notícia para que fique com pelo menos duas linhas e eu possa exemplificar direito.</a>
+							</div>
+						</div>
+					</div>
+					<div class="widget">
+						<div class="widget_titulo">PUBLICIDADE</div>
+						<div class="widget_conteudo">
+							<img src="./images/banner.jpg" border="0" width="275" />
+						</div>
+					</div>
+					<div class="widget">
+						<div class="widget_titulo">ENCONTRE-NOS NO FACEBOOK</div>
+						<div class="widget_conteudo">
+							<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs&width=340&height=70&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="275" height="70" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" width="275" height="154" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="footer">
+
+			</div>
+		</footer>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
